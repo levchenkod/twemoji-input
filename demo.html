@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="./twemoji.input.css">
+<style type="text/css">
+body{
+	width: 350px;
+	margin: 100px auto;
+	background: #FABD4A;
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+div._twemoji_textarea{
+	background: rgba(255,255,255,0.8);
+	border-color: rgba(255,255,255,0.8);
+}
+
+div._twemoji_textarea:focus{
+	background: white;
+	border-color: white;
+}
+</style>
+</head>
+<body>
+<textarea class="_twemoji_input" rows="7"></textarea>
+
+<!-- Does NOT work localy ¯\_(ツ)_/¯ -->
+
+<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+<script src="./twemoji.input.js"></script>
+<script type="text/javascript">
+	new TwemojiInput(document.querySelector('textarea'));
+</script>
+</body>
+</html>

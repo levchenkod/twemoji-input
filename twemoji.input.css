@@ -1,0 +1,143 @@
+div._twemoji_textarea {
+    min-height: 150px;
+    width: 350px;
+    border: solid 1px silver;
+}
+
+
+
+
+
+div._twemoji_wrap{
+    display: inline-block;
+    position: relative;
+}
+
+div._twemoji_box{
+    opacity: 0.8;    
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYxJREFUeNrsWKFuwzAQTdupJDy8wxkZChkqGgkPL89XbKgkvF8xXl400pKShWwk3Hzn6SpZlu2c3XSTpvekp9QX+/wcX87pZRkAAH+MWeK4ilgS7w3bB/FEPNxSgJ54QywCfQbiTiokRkBLXEf03xO7sU4LoTO96ufIp6W3Jye+hzrNBY4eiLVlU56+tr3m8VcJaK223t/GYW/ZvhsZHyVg5Qi4N772HPUZX3vr/gUF+0kSUDlsjSGu5N+lMUkj9PODu4Qc0Hgm6VISyjz7HRRTClDGftvoORG5klOSANdAneFePP21/TilAJezNSeYV8PxwO3cky2P16RiVwpW/L7vLWEbFiFOyTNhAHUOx2Y8rAL329AWLIRB90V8ctxbssClZ+yWeJ7iMPrklT4GJrNFbyVHcuz3QM77XAUe+YHjQ93yi+hySpZG+xSKdgAAAABAfQD1AdQHUB9AfQD1AdQH/m19oHbkh6j6gCQIh8AKCuNfc+Z5NYepTsOKV5MLKiSKJ0d9AACAUXwLMAAao3x5Lx1DVwAAAABJRU5ErkJggg==');
+
+    background-repeat: no-repeat;
+    background-position: center -6px;
+    cursor: pointer;
+}
+
+div._twemoji_box:hover, div._twemoji_wrap.__open  div._twemoji_box{
+    opacity: 0.8;
+}
+
+div._twemoji_box:active, div._twemoji_wrap.__open  div._twemoji_box:active{
+    opacity: 1;
+    background-position: center -38px;
+}
+
+div._twemoji_popover{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    width: 195px;
+    height: 150px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-border-radius: 5px 0 5px 5px;
+    -moz-border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;
+}
+
+div._twemoji_popover::before {
+	content: '';
+	position: absolute;
+	border-bottom: solid 10px rgba(0,0,0,0.8);
+	border-right: solid 9px transparent;
+	border-left: solid 9px transparent;
+	top: -10px;
+	right: 0px;
+}
+
+div._twemoji_wrap.__open div._twemoji_popover{
+    display: block;
+}
+
+div._twemoji_list_wrap{
+    overflow: hidden;
+    width: 185px;
+    height: 150px;
+}
+
+div._twemoji_popover ul{
+    clear: both;
+    margin: 0;
+    padding: 5px;
+    width: 160px;
+}
+
+div._twemoji_popover li{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+div._twemoji_popover li img{
+    width: 24px;
+    height: 24px;
+}
+
+textarea._twemoji_input{
+	display: none;
+}
+
+div._twemoji_textarea .emoji{
+    width: 24px;
+}
+
+.scroll_wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll_slave{
+    overflow: hidden;
+}
+
+.scroll_master{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    z-index: 99;
+}
+
+.scroll_bar{
+    position: absolute;
+    right: 5px;
+    margin-top: 8px;
+    top: 0;
+    width: 7px;
+    min-height: 15px;
+    background: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.scroll_master:hover ~ .scroll_bar{
+    opacity: 0.8;
+}
+
+.scroll_master:active ~ .scroll_bar{
+    opacity: 0.9;
+}
