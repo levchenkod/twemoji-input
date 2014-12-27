@@ -46,6 +46,6 @@ twemoji.parse('I \u2764\uFE0F emoji!');
 
 ##
 
-[tweet if you tweet](https://twitter.com/intent/tweet?url=https://github.com/LevchenkoD/twemoji-input&text=The%20thing%20that%20helps%20use%20twemoji%20on%20any%20website%20%F0%9F%91%8C%20&hashtags=twemojiInput,twemoji,emoji) ![Victory](https://twemoji.maxcdn.com/16x16/270c.png)
+And [tweet if you tweet](https://twitter.com/intent/tweet?url=https://github.com/LevchenkoD/twemoji-input&text=The%20thing%20that%20helps%20use%20twemoji%20on%20any%20website%20%F0%9F%91%8C%20&hashtags=twemojiInput,twemoji,emoji) ![Victory](https://twemoji.maxcdn.com/16x16/270c.png)
 
 
