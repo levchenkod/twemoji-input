@@ -5,6 +5,8 @@
 
 This simple javascript function that allows you to easily past twemoji in textarea.
 
+[Demo](http://codepen.io/levchenkod/full/VYKXOR/)
+
 
 ## How to use it![Question Sign](https://twemoji.maxcdn.com/16x16/2754.png)
 
