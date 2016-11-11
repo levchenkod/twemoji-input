@@ -3,7 +3,7 @@
 
 ## What is it![Question Sign](https://twemoji.maxcdn.com/16x16/2754.png)
 
-This simple javascript function that allows you to easily past twemoji in textarea.
+This is a simple javascript function that allows you to easily paste twemoji in textarea.
 
 [Demo](http://codepen.io/levchenkod/full/VYKXOR/)
 
