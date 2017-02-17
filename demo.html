@@ -18,17 +18,16 @@ div._twemoji_textarea:focus{
 	background: white;
 	border-color: white;
 }
+
 </style>
 </head>
 <body>
-<textarea class="_twemoji_input" rows="7"></textarea>
+<textarea class="_twemoji_input" rows="7">Hello!✌</textarea>
 
-<!-- Does NOT work localy ¯\_(ツ)_/¯ -->
-
-<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+<script src="https://twemoji.maxcdn.com/twemoji.js"></script>
 <script src="./twemoji.input.js"></script>
 <script type="text/javascript">
-	new TwemojiInput(document.querySelector('textarea'));
+	var Twemoji = new TwemojiInput(document.querySelector('textarea'));
 </script>
 </body>
 </html>
