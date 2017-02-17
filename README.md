@@ -28,13 +28,18 @@ then create<code>textarea</code>element
 and init the code
 
 ```javascript
-var twi = new TwemojiInput(document.getElementById('my-input'));
+var Twemoji = new TwemojiInput(document.getElementById('my-input'));
 ```
 
 grab message from <code>textarea</code>
 ```javascript
 var value = document.getElementById('my-input').value;
 ```
+or with `<img>` tags
+```javascript
+Twemoji.Editor.value()
+```
+
 
 
 ## One more thing![Poiter Up](https://twemoji.maxcdn.com/36x36/261d.png)
