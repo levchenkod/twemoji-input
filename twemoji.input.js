@@ -28,7 +28,6 @@ var TwemojiInput = function(obj){
       var t = this;
 
       t.init();
-      console.log(t);
     };
 
     Editor.prototype.addStyles = function(){
